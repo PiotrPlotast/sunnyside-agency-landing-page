@@ -1,1 +1,6 @@
 @use '_reset';
+
+.header__bg-img {
+    position: absolute;
+    z-index: -1;
+}
