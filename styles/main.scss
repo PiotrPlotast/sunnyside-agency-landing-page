@@ -1,6 +1,40 @@
 @use '_reset';
+// font-family: 'Fraunces', serif;
 
 .header__bg-img {
     position: absolute;
     z-index: -1;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+.contact-btn,
+.learn-more-btn {
+    font-family: 'Fraunces', serif;
+}
+
+h1 {
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+#toggle {
+    border: none;
+    background: none;
 }
