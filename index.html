@@ -15,22 +15,22 @@
 
 <body>
   <header>
-    <picture>
-      <source media="(min-width: 600px)" srcset="./images/desktop/image-header.jpg">
-      <img src="./images/mobile/image-header.jpg" alt="" class="header__bg-img">
-    </picture>
     <nav role="navigation">
       <a href=""><img src="./images/logo.svg" alt=""></a>
-      <button id="toggle" aria-expanded="false" aria-controls="menu"><img src="./images/icon-hamburger.svg"
-          alt=""></button>
-      <ul role="list" id="menu">
-        <li><a href="">About</a></li>
-        <li><a href="">Services</a></li>
-        <li><a href="">Projects</a></li>
-        <li><a href="" class="contact-btn">Contact</a></li>
+      <button id="toggle" aria-expanded="false" aria-controls="menu" aria-label="Open Menu"><img
+          src="./images/icon-hamburger.svg" alt=""></button>
+      <ul role="menu" id="menu">
+        <li class="menu__item" role="menuitem"><a href="">About</a></li>
+        <li class="menu__item" role="menuitem"><a href="">Services</a></li>
+        <li class="menu__item" role="menuitem"><a href="">Projects</a></li>
+        <li class="menu__item" role="menuitem"><a href="" class="contact-btn">Contact</a></li>
       </ul>
     </nav>
     <h1>We are creatives</h1>
+    <!-- <picture>
+      <source media="(min-width: 600px)" srcset="./images/desktop/image-header.jpg">
+      <img src="./images/mobile/image-header.jpg" alt="" class="header__bg-img">
+    </picture> -->
     <img src="./images/icon-arrow-down.svg" alt="">
   </header>
   <main>
@@ -77,25 +77,28 @@
       <h4>Client testimonials</h4>
       <div class="testimonials__client">
         <img src="./images/image-emily.jpg" alt="">
-        <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always
+        <p class="testimonials__client__review">We put our trust in Sunnyside and they delivered, making sure our needs
+          were met and deadlines were always
           hit.
         </p>
-        <p>Emily R.</p>
-        <p>Marketing Director</p>
+        <p class="testimonials__client__name">Emily R.</p>
+        <p class="testimonials__client__job">Marketing Director</p>
       </div>
       <div class="testimonials__client">
         <img src="./images/image-thomas.jpg" alt="">
-        <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and
+        <p class="testimonials__client__review">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s
+          success made it a satisfying and
           enjoyable
           experience.</p>
-        <p>Thomas S.</p>
-        <p>Chief Operating Officer</p>
+        <p class="testimonials__client__name">Thomas S.</p>
+        <p class="testimonials__client__job">Chief Operating Officer</p>
       </div>
       <div class="testimonials__client">
         <img src="./images/image-jennie.jpg" alt="">
-        <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
-        <p>Jennie F.</p>
-        <p>Business Owner</p>
+        <p class="testimonials__client__review">Incredible end result! Our sales increased over 400% when we worked with
+          Sunnyside. Highly recommended!</p>
+        <p class="testimonials__client__name">Jennie F.</p>
+        <p class="testimonials__client__job">Business Owner</p>
       </div>
     </section>
     <div class="small-gallery">
@@ -135,6 +138,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+  <script src="./app.js"></script>
 </body>
 
 </html>

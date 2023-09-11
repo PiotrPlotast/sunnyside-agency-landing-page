@@ -1,17 +1,38 @@
-@use '_reset';
-// font-family: 'Fraunces', serif;
+@use 'variables';
+@use 'reset';
 
 .header__bg-img {
     position: absolute;
-    z-index: -1;
+    // z-index: -1;
 }
 
 body {
-    font-family: 'Barlow', sans-serif;
+    font-family: variables.$main-font;
 }
 
 header {
     text-align: center;
+    background: url(/images/mobile/image-header.jpg), lightgray 0px 0px / 100% 100% no-repeat;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1rem;
+    padding-top: 2rem;
+    position: relative;
+}
+
+#menu {
+    display: none;
+    background-color: #fffcf8;
+    position: absolute;
+    clip-path: polygon(100% 100%, 1% 100%, 0 15%, 86% 15%, 100% 0, 100% 15%);
+    padding: 1rem;
+
+    .menu__item {
+        margin: 1rem;
+    }
 }
 
 main {
@@ -23,7 +44,7 @@ h2,
 h3,
 .contact-btn,
 .learn-more-btn {
-    font-family: 'Fraunces', serif;
+    font-family: variables.$secondary-font;
 }
 
 h1 {

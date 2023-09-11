@@ -22,7 +22,8 @@ ul {
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role=list],
-ol[role=list] {
+ol[role=list],
+ul[role=menu] {
   list-style: none;
 }
 
@@ -74,7 +75,6 @@ select {
 }
 .header__bg-img {
   position: absolute;
-  z-index: -1;
 }
 
 body {
@@ -83,6 +83,26 @@ body {
 
 header {
   text-align: center;
+  background: url(/images/mobile/image-header.jpg), lightgray 0px 0px/100% 100% no-repeat;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem;
+  padding-top: 2rem;
+  position: relative;
+}
+
+#menu {
+  display: none;
+  background-color: #fffcf8;
+  position: absolute;
+  clip-path: polygon(100% 100%, 1% 100%, 0 15%, 86% 15%, 100% 0, 100% 15%);
+  padding: 1rem;
+}
+#menu .menu__item {
+  margin: 1rem;
 }
 
 main {
