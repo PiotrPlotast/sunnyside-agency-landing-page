@@ -35,6 +35,10 @@ nav {
     }
 }
 
+#menu.is-active {
+    display: block;
+}
+
 main {
     text-align: center;
 }
