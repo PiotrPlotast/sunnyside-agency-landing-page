@@ -84,6 +84,7 @@ body {
 header {
   text-align: center;
   background: url(/images/mobile/image-header.jpg), lightgray 0px 0px/100% 100% no-repeat;
+  background-size: cover;
 }
 
 nav {
@@ -92,6 +93,10 @@ nav {
   margin: 0 1rem;
   padding-top: 2rem;
   position: relative;
+}
+
+#toggle img {
+  pointer-events: none;
 }
 
 #menu {
@@ -107,6 +112,8 @@ nav {
 
 #menu.is-active {
   display: block;
+  width: 100%;
+  transform: translateY(20%);
 }
 
 main {
@@ -123,6 +130,12 @@ h3,
 
 h1 {
   color: #fff;
+  font-size: 2.5rem;
+  letter-spacing: 0.39rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: normal;
+  margin: 5rem 0 3rem;
 }
 
 a {
@@ -132,6 +145,12 @@ a {
 #toggle {
   border: none;
   background: none;
+}
+
+#arrow {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 9rem;
 }
 
 /*# sourceMappingURL=style.css.map */
