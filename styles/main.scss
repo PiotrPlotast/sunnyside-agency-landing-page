@@ -1,21 +1,16 @@
 @use 'variables';
 @use 'reset';
 
-.header__bg-img {
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-}
-
 body {
     font-family: variables.$main-font;
 }
 
 header {
     text-align: center;
-    // background: url(/images/mobile/image-header.jpg), lightgray 0px 0px / 100% 100% no-repeat;
-    // background-size: 100%;
-    // background-repeat: no-repeat;
+    background: url(/images/mobile/image-header.jpg), lightgray 0px 0px / 100% 100% no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
 nav {
@@ -38,7 +33,7 @@ nav {
     display: none;
     background-color: #fffcf8;
     position: absolute;
-    clip-path: polygon(100% 100%, 1% 100%, 0 15%, 90% 15%, 100% 0, 100% 15%);
+    clip-path: polygon(100% 100%, 0% 100%, 0 15%, 95% 15%, 100% 0, 100% 15%);
     padding-top: 2rem;
     padding-left: 0;
 
@@ -88,7 +83,7 @@ a {
 #arrow {
     margin-left: auto;
     margin-right: auto;
-    // padding-bottom: 9rem;
+    padding-bottom: 50%;
 }
 
 .hero {
