@@ -75,6 +75,8 @@ select {
 }
 .header__bg-img {
   position: absolute;
+  z-index: -1;
+  width: 100%;
 }
 
 body {
@@ -83,9 +85,6 @@ body {
 
 header {
   text-align: center;
-  background: url(/images/mobile/image-header.jpg), lightgray 0px 0px/100% 100% no-repeat;
-  background-size: 100%;
-  background-repeat: no-repeat;
 }
 
 nav {
@@ -94,6 +93,10 @@ nav {
   margin: 0 1rem;
   padding-top: 2rem;
   position: relative;
+}
+
+#toggle {
+  padding: 0;
 }
 
 #toggle img {
@@ -152,7 +155,6 @@ a {
 #arrow {
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 9rem;
 }
 
 /*# sourceMappingURL=style.css.map */
